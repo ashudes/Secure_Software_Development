@@ -5,7 +5,7 @@ Installation and Getting Started
 This is my Online Shopping Application for electronics, an e-commerce platform built with Python. Please follow the steps below to install and get started with the application.
 
 1. Ensure Python 3.x is installed on your system. 
-2. Clone or download the application from our GitHub repository: https://github.com/ashudes.github.io/tree/My_e_Portfolio
+2. Clone or download the application from our GitHub repository: https://github.com/ashudes/Secure_Software_Development/tree/main
 3. Navigate to the application directory in your command line interface (CLI) and execute:
 ```bash
 python online_shopping_app_main.py
@@ -44,7 +44,6 @@ online_shopping_app.py
 cli.py
 This application works from command line interface and the cli.py file facilitates the flow between different modules and ensuring a smooth user journey from start to finish (Shehmir et al.,2024).
 
- 
 
 Application Functions
 User Authentication
@@ -124,35 +123,13 @@ iii) Authentication unit test output
 iv)Authorization unit test output
  
 
-b.	White Box Testing: Automated testing was run for several functionalities to examine the internal structures of the application to ensure that all logic paths are executed correctly.
-•	 
-•	 
-•	
-
+b.	White Box Testing: Automated testing was run for several functionalities to examine the internal structures of the application to ensure that all logic paths are executed correctl
 
 
 
 a.	Linting with Pylint: The code was analyzed by running pylint and the quality was improved progressively. I will continue to improve the quality based on the analysis from pylint. 
 
  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 References
 BrowserStack. (n.d.). Unit Testing in Python: Detailed Tutorial. [online] Available at: https://www.browserstack.com/guide/unit-testing-python [Accessed 15 May 2024].
