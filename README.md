@@ -1,4 +1,4 @@
-# Secure_Software_Development
+# Online Shopping App
 Python code implementation for my SSD course at UoE
 README file: Online Shopping Application
 Installation and Getting Started
@@ -8,7 +8,7 @@ This is my Online Shopping Application for electronics, an e-commerce platform b
 2. Clone or download the application from our GitHub repository: https://github.com/ashudes/Secure_Software_Development/tree/main
 3. Navigate to the application directory in your command line interface (CLI) and execute:
 ```bash
-python online_shopping_app_main.py
+python cli.py
 4. The CLI will guide you through the registration process, product browsing, and other features.
 The application is designed to be intuitive and user-friendly, providing you with a simple CLI experience.
 
@@ -22,22 +22,13 @@ The codebase is structured following the principles of object-oriented programmi
  
 Here’s an overview of the key Classes:
 online_shopping_app.py
-•	User: Manages user information, authentication, and session management.
- 
-‌(GeeksforGeeks. (2022)).
+•	User: Manages user information, authentication, and session management.‌(GeeksforGeeks. (2022)).
 •	Administrator: Inherits from User, with additional privileges for managing the product inventory.
- 
 •	Product: Represents individual items available for purchase, encapsulating details such as name and price.
- 
-•	ProductList: A collection of Product objects, providing methods to add and remove items from the inventory.
- 
-‌(GeeksforGeeks. (2022)).
+•	ProductList: A collection of Product objects, providing methods to add and remove items from the inventory.‌(GeeksforGeeks. (2022)).
 •	ShoppingCart: Tracks user-selected products, quantities, and the total cost, offering a seamless checkout experience.
- 
 •	Order: Processes and finalizes the user’s purchase, interfacing with the ShoppingCart to complete the transaction.
- 
 •	Payment: Handles payment authorization, processing, and secure storage of payment details.
- 
 •	Shipping: Manages logistics related to the delivery of orders, including address verification and tracking.
  
 
@@ -48,29 +39,20 @@ This application works from command line interface and the cli.py file facilitat
 Application Functions
 User Authentication
 The journey begins with a secure login system. New users are invited to create an account by providing personal details, which are then encrypted using advanced hashing techniques. I used bcrypt for its reliable password hashing and salting capabilities, ensuring that user credentials are stored securely and are impervious to common security threats (Nielson & Monson, 2019).
-Existing users can log in with their credentials, which are verified against the encrypted data stored on the system. This two-step process—hashing on account creation and verification on login—provides a secure authentication framework that protects user data ‌(GeeksforGeeks, 2022).
- 
- 
-(Stack Overflow, n.d.; GeeksforGeeks, 2022).
-Viewing Products
-The application dynamically generates a product catalog from the products.txt file, presenting users with an up-to-date list of items complete with descriptions and pricing. This feature allows users to browse our extensive product range and make informed decisions on their purchases.
+Existing users can log in with their credentials, which are verified against the encrypted data stored on the system. This two-step process—hashing on account creation and verification on login—provides a secure authentication framework that protects user data ‌(GeeksforGeeks, 2022).(Stack Overflow, n.d.; GeeksforGeeks, 2022).
 
- 
-(Stack Overflow. (n.d.)).
+Viewing Products
+The application dynamically generates a product catalog from the products.txt file, presenting users with an up-to-date list of items complete with descriptions and pricing. This feature allows users to browse our extensive product range and make informed decisions on their purchases.(Stack Overflow. (n.d.)).
 
 Selecting Products
-Users can select products for purchase by entering the corresponding product numbers. The application then validates the user’s input, ensuring that only available products are added to the shopping cart. This validation step is crucial for maintaining the integrity of the user’s selection process.
+Users can select products for purchase by entering the corresponding product numbers. The application then validates the user’s input, ensuring that only available products are added to the shopping cart. This validation step is crucial for maintaining the integrity of the user’s selection process.(GeeksforGeeks, 2022).
 
- 
-(GeeksforGeeks, 2022).
 Shopping Cart
 Once selections are made, users can review their shopping cart, which provides a summary of selected items, quantities, and the total price. The shopping cart is designed to give users full control over their selections, allowing them to modify quantities or remove items before proceeding to checkout.
- 
 (GeeksforGeeks, 2022).
 
 Checkout Process
 The checkout process is fortified with a two-factor authentication system. Users receive a unique code via email, which must be entered to verify their identity. This additional security measure safeguards against unauthorized access and ensures that only legitimate transactions are processed (GitHub. (n.d.).
- 
  
 (GitHub. (n.d.)).
 
@@ -93,45 +75,29 @@ My application incorporates several layers of security to protect user data and 
 •	Authorization: Users are granted access only to the features and information appropriate to their role, preventing unauthorized actions within the application.
 •	Secure Transmission: All sensitive information is transmitted securely, adhering to industry-standard encryption protocols.
 •	Secure Storage: Payment details are retrieved and stored securely, following best practices for data protection and privacy.
+
 Testing
 I have tried to ensure quality and security of the application by applying several testing protocols:
 1.	Manual Testing: I have tested each functionality of the application manually, ensuring that every feature works as intended. Screenshots of code executions and outputs are included to demonstrate the testing process.
 i) User Registration testing output
- 
 ii. User Login and Authentication testing output
- 
 iii. View Product List testing output
- 
 iv. Select Product testing output
- 
 v. Ordering process testing output
- 
 vi. Payment and Order Confirmation testing output
  
 2.	Automated Testing: several unit tests and white box tests were conducted to check the security and functionality of the application.
- 
 a.	Unit Testing: Several components were tested in isolation to verify its functionality and robustness (BrowserStack. (n.d.).
 i) User registration unit test output
- 
-
 ii) Secure login unit test output
- 
-
 iii) Authentication unit test output
- 
-
 iv)Authorization unit test output
- 
 
 b.	White Box Testing: Automated testing was run for several functionalities to examine the internal structures of the application to ensure that all logic paths are executed correctl
+c.	Linting with Pylint: The code was analyzed by running pylint and the quality was improved progressively. I will continue to improve the quality based on the analysis from pylint. 
 
 
-
-a.	Linting with Pylint: The code was analyzed by running pylint and the quality was improved progressively. I will continue to improve the quality based on the analysis from pylint. 
-
- 
-
-References
+**References**
 BrowserStack. (n.d.). Unit Testing in Python: Detailed Tutorial. [online] Available at: https://www.browserstack.com/guide/unit-testing-python [Accessed 15 May 2024].
 GeeksforGeeks. (2022). How To Hash Passwords In Python. [online] Available at: https://www.geeksforgeeks.org/how-to-hash-passwords-in-python/.
 GitHub. (n.d.). Online-Shopping-System-using-python/Fashion.py at master · bsdharshini/Online-Shopping-System-using-python. [online] Available at: https://github.com/bsdharshini/Online-Shopping-System-using-python/blob/master/Fashion.py [Accessed 07 May 2024].
