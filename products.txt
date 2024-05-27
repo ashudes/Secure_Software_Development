@@ -1,0 +1,6 @@
+iPhone 14 Pro Max, 1400.0
+iPhone 14, 1200.0
+Samsung S22 Ultra, 900.0
+Samsung S22, 800.0
+Samsung S20, 700.0
+Samsung A55, 600.0
